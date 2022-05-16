@@ -62,9 +62,8 @@ img {
 .slider-nav {
     position: absolute;
     bottom: 20px;
-    width: 100%;
     display: flex;
-    left: 27%;
+    margin-left: 550px;
     justify-content: center;
 }
 
@@ -99,4 +98,48 @@ img {
 
 #slide4:checked~.slide1 {
     margin-left: -75%;
+}
+
+
+
+@media screen and (max-width: 1039px) {
+    .slider-nav {
+        left: auto;
+        transform: translateX(-175%);
+    }
+
+    .wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-slider {
+        max-height: 470px;
+    }
+
+    .item-Text {
+        text-align: center;
+    }
+
+    .item-img {
+        height: 390px;
+        margin-bottom: 60px;
+    }
+
+    .slider-nav {
+        bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .item-img {
+        height: 290px;
+        margin-bottom: 60px;
+    }
+
+    .slider-nav {
+        bottom: 90px;
+    }
 }
